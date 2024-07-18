@@ -607,14 +607,15 @@ impl StateData {
         self.total_pnl_pc = 0u64;
         self.total_pnl_coin = 0u64;
         self.pool_open_time = open_time;
-        self.padding = Zeroable::zeroed();
+        self.punish_pc_amount = 0u64;
+        self.punish_coin_amount = 0u64;
         self.orderbook_to_init_time = 0u64;
         self.swap_coin_in_amount = 0u128;
         self.swap_pc_out_amount = 0u128;
-        self.swap_acc_pc_fee = 0u64;
         self.swap_pc_in_amount = 0u128;
         self.swap_coin_out_amount = 0u128;
-        self.swap_acc_coin_fee = 0u64;
+        self.swap_pc_fee = 0u64;
+        self.swap_coin_fee = 0u64;
 
         Ok(())
     }
