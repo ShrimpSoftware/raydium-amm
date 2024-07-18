@@ -2492,9 +2492,9 @@ impl Processor {
                     .checked_add(swap_amount_out.into())
                     .unwrap();
                 // charge coin as swap fee
-                amm.state_data.swap_acc_coin_fee = amm
+                amm.state_data.swap_coin_fee = amm
                     .state_data
-                    .swap_acc_coin_fee
+                    .swap_coin_fee
                     .checked_add(swap_fee.as_u64())
                     .unwrap();
             }
@@ -2586,9 +2586,9 @@ impl Processor {
                     .checked_add(swap_amount_out.into())
                     .unwrap();
                 // charge pc as swap fee
-                amm.state_data.swap_acc_pc_fee = amm
+                amm.state_data.swap_pc_fee = amm
                     .state_data
-                    .swap_acc_pc_fee
+                    .swap_pc_fee
                     .checked_add(swap_fee.as_u64())
                     .unwrap();
             }
@@ -2905,9 +2905,9 @@ impl Processor {
                     .checked_add(Calculator::to_u128(swap.amount_out)?)
                     .unwrap();
                 // charge coin as swap fee
-                amm.state_data.swap_acc_coin_fee = amm
+                amm.state_data.swap_coin_fee = amm
                     .state_data
-                    .swap_acc_coin_fee
+                    .swap_coin_fee
                     .checked_add(swap_fee)
                     .unwrap();
             }
@@ -2999,9 +2999,9 @@ impl Processor {
                     .checked_add(swap.amount_out.into())
                     .unwrap();
                 // charge pc as swap fee
-                amm.state_data.swap_acc_pc_fee = amm
+                amm.state_data.swap_pc_fee = amm
                     .state_data
-                    .swap_acc_pc_fee
+                    .swap_pc_fee
                     .checked_add(swap_fee)
                     .unwrap();
             }
