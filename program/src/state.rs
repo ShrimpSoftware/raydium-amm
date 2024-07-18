@@ -577,8 +577,10 @@ pub struct StateData {
     pub total_pnl_coin: u64,
     /// ido pool open time
     pub pool_open_time: u64,
-    /// padding for future updates
-    pub padding: [u64; 2],
+    /// punish pc amount
+    pub punish_pc_amount: u64,
+    /// punish coin amount
+    pub punish_coin_amount: u64,
     /// switch from orderbookonly to init
     pub orderbook_to_init_time: u64,
 
@@ -586,15 +588,16 @@ pub struct StateData {
     pub swap_coin_in_amount: u128,
     /// swap pc out amount
     pub swap_pc_out_amount: u128,
-    /// charge pc as swap fee while swap pc to coin
-    pub swap_acc_pc_fee: u64,
 
     /// swap pc in amount
     pub swap_pc_in_amount: u128,
     /// swap coin out amount
     pub swap_coin_out_amount: u128,
-    /// charge coin as swap fee while swap coin to pc
-    pub swap_acc_coin_fee: u64,
+
+    /// swap pc fee
+    pub swap_pc_fee: u64,
+    /// swap coin fee
+    pub swap_coin_fee: u64,
 }
 
 impl StateData {
