@@ -2001,31 +2001,7 @@ dependencies = [
  "serde_bytes",
  "serde_derive",
  "sha2 0.10.8",
- "solana-frozen-abi-macro 1.18.18 (registry+https://github.com/rust-lang/crates.io-index)",
- "subtle",
- "thiserror",
-]
-
-[[package]]
-name = "solana-frozen-abi"
-version = "1.18.18"
-source = "git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito#31e2b12020b3ab00a1814dd0c8eb6ece00208087"
-dependencies = [
- "block-buffer 0.10.4",
- "bs58 0.4.0",
- "bv",
- "either",
- "generic-array",
- "im",
- "lazy_static",
- "log",
- "memmap2",
- "rustc_version",
- "serde",
- "serde_bytes",
- "serde_derive",
- "sha2 0.10.8",
- "solana-frozen-abi-macro 1.18.18 (git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito)",
+ "solana-frozen-abi-macro",
  "subtle",
  "thiserror",
 ]
@@ -2035,17 +2011,6 @@ name = "solana-frozen-abi-macro"
 version = "1.18.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e4ab48d1be18021f5c13f94671e766699511044f81aab3376313f6a2392f8fab"
-dependencies = [
- "proc-macro2 1.0.86",
- "quote 1.0.36",
- "rustc_version",
- "syn 2.0.71",
-]
-
-[[package]]
-name = "solana-frozen-abi-macro"
-version = "1.18.18"
-source = "git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito#31e2b12020b3ab00a1814dd0c8eb6ece00208087"
 dependencies = [
  "proc-macro2 1.0.86",
  "quote 1.0.36",
@@ -2067,7 +2032,8 @@ dependencies = [
 [[package]]
 name = "solana-program"
 version = "1.18.18"
-source = "git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito#31e2b12020b3ab00a1814dd0c8eb6ece00208087"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d97cec6d3d60ef58168c8b3e97fd88e8903fa059eff6635361427c61c946ec1e"
 dependencies = [
  "ark-bn254",
  "ark-ec",
@@ -2109,9 +2075,9 @@ dependencies = [
  "serde_json",
  "sha2 0.10.8",
  "sha3 0.10.8",
- "solana-frozen-abi 1.18.18 (git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito)",
- "solana-frozen-abi-macro 1.18.18 (git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito)",
- "solana-sdk-macro 1.18.18 (git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito)",
+ "solana-frozen-abi",
+ "solana-frozen-abi-macro",
+ "solana-sdk-macro",
  "thiserror",
  "tiny-bip39",
  "wasm-bindgen",
@@ -2163,11 +2129,11 @@ dependencies = [
  "sha2 0.10.8",
  "sha3 0.10.8",
  "siphasher",
- "solana-frozen-abi 1.18.18 (registry+https://github.com/rust-lang/crates.io-index)",
- "solana-frozen-abi-macro 1.18.18 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-frozen-abi",
+ "solana-frozen-abi-macro",
  "solana-logger",
  "solana-program",
- "solana-sdk-macro 1.18.18 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-sdk-macro",
  "thiserror",
  "uriparse",
  "wasm-bindgen",
@@ -2178,18 +2144,6 @@ name = "solana-sdk-macro"
 version = "1.18.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ba67050b90454a8638913a7d5775703c0557157def04ddcc8b59c964cda8535"
-dependencies = [
- "bs58 0.4.0",
- "proc-macro2 1.0.86",
- "quote 1.0.36",
- "rustversion",
- "syn 2.0.71",
-]
-
-[[package]]
-name = "solana-sdk-macro"
-version = "1.18.18"
-source = "git+https://github.com/jito-foundation/jito-solana.git?tag=v1.18.18-jito#31e2b12020b3ab00a1814dd0c8eb6ece00208087"
 dependencies = [
  "bs58 0.4.0",
  "proc-macro2 1.0.86",
